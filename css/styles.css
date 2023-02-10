@@ -1,0 +1,368 @@
+/* Modificaciones generales */
+*{
+    margin: 1px;
+    padding: 1px;
+}
+
+ul {
+    list-style-type: none;
+   display: flex;   
+}
+/* Boton del index, su color y bla */
+a{
+    text-decoration: none;
+    color: bisque;
+}
+/* Boton del index, su color y bla */
+li{
+    padding: 1 rem;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+.grid__container{
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "main main main main"
+                         "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    background-color: black;
+    background-size: cover; 
+}
+
+main {
+    grid-area: main;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image:-moz-linear-gradient(to bottom, black, rgb(4, 44, 4)) ;
+    background-size: cover;  
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background-color: brown;    
+    justify-content:flex-end;
+}
+
+.header__logo{
+    display: flex;
+    flex-grow: 1;
+}
+
+.header__logo1{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(234, 182, 118);
+}
+/* celular */
+@media (min-width: 320px) and (max-width: 540px) {
+    header{
+        background-color: antiquewhite;
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .principal1__imagen{
+    
+        height: 300px;
+        width: 300px;
+    }
+
+}
+/* tablet */
+@media (min-width: 541px) and (max-width: 720px) {
+    header{
+        background-color: rgb(63, 37, 3); 
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .principal1__imagen{
+    
+        height: 500px;
+        width: 500px;
+    }
+
+    
+}
+
+/* modificaciones en el index */
+
+
+.origen{
+    display: flex;
+    color: bisque;    
+    justify-content: center;
+}
+.principal1{
+    display: flex;    
+    justify-content: center;
+}
+.principal1__imagen{
+    
+    height: 300px;
+    width: 800px;
+    padding-top: 10px;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+    color: aliceblue;
+    
+}
+
+.descripcion__contenido{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:justify;
+    width: 400px;
+    color: aliceblue;
+}
+.descripcion2{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:justify;
+    width: 400px;
+    color: aliceblue;
+}
+
+button:hover{
+    transform: rotate(4deg) translate(8deg);
+    background-color: blanchedalmond;
+}
+.boton__transicion{
+    transition: all 3s;
+}
+.imagen2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 150px;
+    height: 80px;
+    background-color: rgba(224, 15, 15, 0.651);
+    border-radius: 10px;
+}
+
+.redes{
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    height: 100px;
+    color: aliceblue;
+}
+
+
+/* modificaciones en el preguntas frecuentes */
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+}
+
+.color{
+    color: antiquewhite;
+}
+
+.grid__container1{
+    display: grid;
+    color: antiquewhite;
+    grid-template-areas: "grid1 grid2"
+                         "grid3 grid4"
+                         "grid5 grid6"
+                         "grid7 grid8";
+    gap: 10px;    
+}
+
+.grid__item1{
+    grid-area: grid1;
+    border: 3px solid antiquewhite;
+}
+
+.grid__item2{
+    grid-area: grid2;
+    border: 3px solid antiquewhite;
+}
+
+.grid__item3{
+    grid-area: grid3;
+    border: 3px solid antiquewhite;
+}
+
+.grid__item4{
+    grid-area: grid4;
+    border: 3px solid antiquewhite;
+}
+
+.grid__item5{
+    grid-area: grid5;
+    border: 3px solid antiquewhite;
+}
+
+.grid__item6{
+    grid-area: grid6;
+    border: 3px solid antiquewhite;
+}
+
+.grid__item7{
+    grid-area: grid7;
+    border: 3px solid antiquewhite;
+}
+
+.grid__item8{
+    grid-area: grid8;
+    border: 3px solid antiquewhite;
+}
+
+.interaccion{
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+}
+
+.botones{
+    display: flex;
+    gap: 5px;
+}
+
+.interaccion__escritura{
+    height: 20px;
+    background-color: white;
+    margin: 15px;
+}
+input{
+    height: 25px;
+    width: 120px;
+    background-color: bisque;
+    border-radius: 13px;
+    
+}
+form{
+    height: 1px;
+}
+
+.preguntas{
+    display: flex
+}
+.preguntas__navTit{
+    flex-direction: column;
+}
+
+/* modificaciones en Cuenta */
+.display{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+}
+
+.cuenta{
+    display: flex;
+    color: antiquewhite;
+}
+
+.interaccion{
+    display: flex;
+}
+.interaccion__etiqueta{
+    text-decoration: underline;
+}
+
+/* modificaciones en cajas */
+
+.grid__imagen{
+    display: grid;
+    height: 900px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100px 100px 150px 100px;
+    gap: 10px;
+    background-position: center;
+}
+
+.grid__imagen1{
+    border: 2px solid black;
+    grid-row:1/3;
+    background-image: url(../resources/csgo.4\ cajas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
+
+.grid__imagen2{
+    border: 2px solid black;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image:url(../resources/csgo.6\ caja\ negra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
+
+.grid__imagen3{
+    border: 2px solid black;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-image: url(../resources/csgo.\ 6\ cuchillos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+
+.grid__imagen4{
+    border: 2px solid black;
+    background-image: url(../resources/csgo.\ 6\ cuchillos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:inherit;
+}
+
+.grid__imagen5{
+    border: 2px solid black;
+    background-image: url(../resources/csgo.\ 6\ cuchillos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+}
+
+.grid__imagen6{
+    border: 2px solid black;
+    background-image: url(../resources/csgo.\ 6\ cuchillos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+}
+
+.grid__imagen7{
+    border: 2px solid black;
+    background-image: url(../resources/csgo.\ 6\ cuchillos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+}
+
+/* modificaciones en mercado */
+
+.principal{
+    color: antiquewhite;
+}
