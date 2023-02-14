@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="shortcut icon" href="resources/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
     <link rel="stylesheet" href="css/styles.css">
     <title>The Box Land</title>
 </head>
@@ -26,10 +27,31 @@
     <main>
         <section class="origen">
             <h2 class="origen__titulo"> Ingresá y haz rendir tu dinero en cajas!</h2>
-        </section>        
-        <section class="principal1">            
-            <img class="principal1__imagen" src="resources/csgo.1.jpg"/>
         </section>
+        <section class="container-fluid">
+            <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="resources/csgo.1.jpg" class="d-block w-100 imagen__display" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="resources/csgo.2.jpg" class="d-block w-100 imagen__display" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="resources/csgo. 6 cuchillos.jpg" class="d-block w-100 imagen__display" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>      
+        </section>     
+        
          <!-- Segunda sección --> 
         <section class="descripcion">
            <div class="descripcion__contenido">
@@ -59,5 +81,6 @@
         <div class="footer__disclaimer">Todos los derechos reservados. 2023.
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
