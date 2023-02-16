@@ -39,7 +39,7 @@ header {
 main {
     grid-area: main;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image:-moz-linear-gradient(to bottom, black, rgb(4, 44, 4)) ;
+    background-image:linear-gradient(to bottom, black, rgb(4, 44, 4)) ;
     background-size: cover;  
 }
 
@@ -84,7 +84,7 @@ footer{
 /* modificaciones en el index */
 .color__fondo{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image:-moz-linear-gradient(to bottom, black, rgb(4, 44, 4)) ;
+    background-image:linear-gradient(to bottom, black, rgb(4, 44, 4)) ;
     background-size: cover; 
 }
 .grid__containerindex{
