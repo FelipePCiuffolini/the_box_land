@@ -246,7 +246,7 @@ body{
     border: 0.188rem solid antiquewhite;
 }
 
-.interaccion{
+.interaccion__preguntasfrecuentes{
     display: flex;
     flex-direction: column;
     color: antiquewhite;
@@ -296,6 +296,11 @@ form{
 
 .interaccion{
     display: flex;
+    text-align: center;
+}
+
+.pseudo__elemento::first-line{
+    font-size:x-large;
 }
 
 .interaccion__etiqueta{
