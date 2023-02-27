@@ -302,11 +302,10 @@ form{
 .pseudo__elemento::first-line{
     font-size:x-large;
 }
-.interaccion__espacio{
-    color: antiquewhite;
-}
+
 .interaccion__etiqueta{
     text-decoration: underline;
+    color: antiquewhite;
 }
 
 /* modificaciones en cajas */
