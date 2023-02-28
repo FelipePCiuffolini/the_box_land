@@ -285,18 +285,22 @@ form{
 /* modificaciones en Cuenta */
 .display{
     display: flex;
-    height: 37.5rem;
+    height: 39.5rem;
     flex-direction: column;
+}
+
+.gridcontainer__cuenta{
+    grid-template-areas: "header header header header"
+                         "cuenta"
+                         "interaccion interaccion interaccion interaccion"
+                         "consultas consultas consultas consultas"
+                         "footer footer footer footer" ;
 }
 
 .cuenta{
     display: flex;
+    grid-area: cuenta;
     color: antiquewhite;
-}
-
-.interaccion{
-    display: flex;
-    text-align: center;
 }
 
 .pseudo__elemento::first-line{
@@ -307,6 +311,36 @@ form{
     text-decoration: underline;
     color: antiquewhite;
 }
+
+.interaccion{
+    display: flex;
+    grid-area: interaccion;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.interaccion__ingreso{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: double 0.5rem  rgb(234, 182, 118);
+    
+}
+
+.consultas{
+    grid-area: consultas;
+    color: antiquewhite;
+}
+
+.consultas__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: end;
+}
+
+
 
 /* modificaciones en cajas */
 

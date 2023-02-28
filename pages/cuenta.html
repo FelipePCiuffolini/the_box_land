@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <title>Cuenta</title>
 </head>
-<body>
+<body class=" gridcontainer__cuenta">
     <header class="header__pseudoclass">
         <h1 class="header__logo"><a class="header__logo1" href="../index.html">The Box Land</a></h1>
         <nav class="header__navegacion">
@@ -29,15 +29,24 @@
         </section>
         <section class="interaccion">
             <form class="interaccion__formulario" method="post">
-                <div class="interaccion__espacio">
-                    <label class="interaccion__etiqueta pseudo__elemento">Iniciar Sesión</label>
+                <div class="interaccion__ingreso">
+                    <label class="interaccion__etiqueta pseudo__elemento">Iniciar Sesión</label>            
+                    <label class="interaccion__etiqueta">Usuario:</label>
+                    <input type="email"/>
+                    <label class="interaccion__etiqueta">Contraseña:</label>
+                    <input type="password"/>
+                    <input type="submit" value="Ingresar"/>
                 </div>
-                <label class="interaccion__etiqueta">Usuario:</label>
-                <input type="email"/>
-                <label class="interaccion__etiqueta">Contraseña:</label>
-                <input type="password"/>
-                <input type="submit" value="Ingresar"/>
             </form>
+        </section>
+        <section class="consultas">
+            <div class="consultas__div">
+                <p>Olvidé mi usuario</p>
+                <p>Olvidé mi contraseña</p>
+                <p>Tengo otros inconvenientes para ingresar a mi cuenta</p>
+            </div>
+        </section>
+            
         </section>
 
     </main>
