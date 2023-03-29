@@ -7,9 +7,12 @@
 //console.log(parseInt (edadVieja) + parseInt (edad));
 //alert(`hola ${miNombre} de profesion: ${profesion}`);
 
- let Usuario = prompt("Coloque porfavor, su nombre de usuario");
-let Contraseña = prompt("Coloque su contraseña");
-if((Usuario == "Felipe")||(Usuario == "felipe") && (Usuario !=="") && (Contraseña === "Juan")){
+let datoU = prompt("Coloque porfavor, su nombre de usuario");
+let datoC = prompt("Coloque el código de acceso");
+let contraseña = 1234;
+let usuario = "Felipe";
+
+/* if((Usuario == "Felipe")||(Usuario == "felipe") && (Usuario !=="") && (Contraseña === "Juan")){
     alert(`Hola ${Usuario}, bienvenido a The Box Land`);
 
 } else if(Usuario == "juan"){
@@ -17,9 +20,15 @@ if((Usuario == "Felipe")||(Usuario == "felipe") && (Usuario !=="") && (Contrase�
 
 }else{
     alert("Usuario no identificado");
+} */
+
+while ((datoC != contraseña) /* && (datoU != usuario) */ ){
+    alert ("Código de acceso incorrecto");
+    datoC = parseInt(prompt("Porfavor ingrese su código nuevamente")) ;
+    alert (`bienvenido ${datoU} a The Box Land`)
 }
 
- let edad = parseInt(prompt("Que edad tienes?"));
+/* let edad = parseInt(prompt("Que edad tienes?"));
 
 let edadNinio = edad <= 17;
 let edadJoven = edad <= 40;
@@ -38,7 +47,7 @@ if(edadNinio){
 
 for (let i = 0; i <= 10; i++){
     console.log(i)
-}
+} */
 
 let numeroIngresado = parseInt(prompt("Que edad tenes?"));
 let repeticion = parseInt(prompt("cuantas veces queres multiplicar tu edad?"));
@@ -52,4 +61,4 @@ for (let i = 1; i <= repeticion; i++){
         break;
     }
     console.log(`tu edad es ${numeroIngresado} X ${repeticion} = ${resultado}`);
-}
+} 
