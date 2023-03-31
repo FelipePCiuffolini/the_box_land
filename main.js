@@ -62,3 +62,13 @@ for (let i = 1; i <= repeticion; i++){
     }
     console.log(`tu edad es ${numeroIngresado} X ${repeticion} = ${resultado}`);
 } 
+
+
+function suma (num1, num2){
+    let resultado = (num1 + num2);
+    console.log (resultado);
+    return resultado;
+}
+
+suma (7, 13);
+suma (37, 37);
